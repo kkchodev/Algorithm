@@ -3,7 +3,7 @@ package DoItAlgorithm.chap01;
 import java.util.Scanner;
 
 
-//3°³ÀÇ Á¤¼ı°ªÀ» ÀÔ·ÂÇÏ°í Áß¾Ó°ªÀ» ±¸ÇÑ ´ÙÀ½¿¡ Ãâ·ÂÇÕ´Ï´Ù. 
+//3ê°œì˜ ì •ìˆ«ê°’ì„ ì…ë ¥í•˜ê³  ì¤‘ì•™ê°’ì„ êµ¬í•œ ë‹¤ìŒì— ì¶œë ¥í•©ë‹ˆë‹¤. 
 public class C01_Median {
 	static int med3(int a, int b, int c) {
 		if(a>=b)
@@ -25,13 +25,13 @@ public class C01_Median {
 			// TODO Auto-generated method stub
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.println("¼¼ Á¤¼öÀÇ Áß¾Ó°ªÀ» ±¸ÇÕ´Ï´Ù.");
-		System.out.println("aÀÇ °ª: ");
+		System.out.println("ì„¸ ì •ìˆ˜ì˜ ì¤‘ì•™ê°’ì„ êµ¬í•©ë‹ˆë‹¤.");
+		System.out.println("aì˜ ê°’: ");
 		int a = stdIn.nextInt(); 
-		System.out.println("bÀÇ °ª: ");
+		System.out.println("bì˜ ê°’: ");
 		int b = stdIn.nextInt();	
-		System.out.println("cÀÇ °ª: ");
+		System.out.println("cì˜ ê°’: ");
 		int c = stdIn.nextInt();		
-		System.out.println("Áß¾Ó°ªÀº "+ med3(a,b,c)+"ÀÔ´Ï´Ù.");
+		System.out.println("ì¤‘ì•™ê°’ì€ "+ med3(a,b,c)+"ì…ë‹ˆë‹¤.");
 	}
 }

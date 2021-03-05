@@ -8,14 +8,14 @@ public class C02_Digits {
 		Scanner stdIn = new Scanner(System.in);
 		int no; 
 		
-		System.out.println("2ÀÚ¸®ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("2ìë¦¬ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		
 		do {
-			System.out.println("ÀÔ·Â: ");
+			System.out.println("ì…ë ¥: ");
 			no = stdIn.nextInt(); 
-		}while(no<10||no>99); // or (¾î´À ÇÏ³ª¶óµµ true¸é true) 
-		// !(no>=10 && no<=99) Ç¥Çö°ú °°´Ù. µå¸ğ¸£°£ÀÇ ¹ıÄ¢ 
-			System.out.println("º¯¼ö noÀÇ °ªÀº " + no +"°¡ µÇ¾ú½À´Ï´Ù.");
+		}while(no<10||no>99); // or (ì–´ëŠ í•˜ë‚˜ë¼ë„ trueë©´ true) 
+		// !(no>=10 && no<=99) í‘œí˜„ê³¼ ê°™ë‹¤. ë“œëª¨ë¥´ê°„ì˜ ë²•ì¹™ 
+			System.out.println("ë³€ìˆ˜ noì˜ ê°’ì€ " + no +"ê°€ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 
 	}

@@ -1,26 +1,27 @@
 package DoItAlgorithm.chap01;
 
 import java.util.Scanner;
-//1,2, ... nÀÇ ÇÕÀ» ±¸ÇÕ´Ï´Ù(¾ç¼ö¸¸ ÀÔ·Â)
+//1,2, ... nì˜ í•©ì„ êµ¬í•©ë‹ˆë‹¤(ì–‘ìˆ˜ë§Œ ì…ë ¥)
 
 public class A06_SumForPos {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 		int n;
 		
-		System.out.println("1ºÎÅÍ n±îÁöÀÇ ÇÕÀ» ±¸ÇÕ´Ï´Ù");
+		System.out.println("1ë¶€í„° nê¹Œì§€ì˜ í•©ì„ êµ¬í•©ë‹ˆë‹¤");
 		
-		do { //do : »çÈÄ ÆÇ´Ü ¹İº¹¹®(ÀÏ´Ü ·çÇÁ º»¹®À» ÇÑ ¹ø ½ÇÇàÇÑ ´ÙÀ½¿¡ °è¼Ó ¹İº¹ÇÒ °ÍÀÎÁö ÆÇ´Ü)
-			System.out.println("nÀÇ °ª : ");
+		do { //do : ì‚¬í›„ íŒë‹¨ ë°˜ë³µë¬¸(ì¼ë‹¨ ë£¨í”„ ë³¸ë¬¸ì„ í•œ ë²ˆ ì‹¤í–‰í•œ ë‹¤ìŒì— ê³„ì† ë°˜ë³µí•  ê²ƒì¸ì§€ íŒë‹¨)
+			System.out.println("nì˜ ê°’ : ");
 			n = stdIn.nextInt(); 
-		} while (n<=0);  // nÀÌ 0º¸´Ù Å¬ ¶§±îÁö ¹İº¹!
+		} while (n<=0);  // nì´ 0ë³´ë‹¤ í´ ë•Œê¹Œì§€ ë°˜ë³µ!
 		
-		int sum = 0; //ÇÕ
+		int sum = 0; //í•©
 		
 		for(int i=1; i<=n; i++) 
-			sum+=1; // sum¿¡ 1´õÇØ°¡±â
+			sum+=1; // sumì— 1ë”í•´ê°€ê¸°
 		
-		System.out.println("1ºÎÅÍ "+ n +"±îÁöÀÇ ÇÕÀº" + sum +"ÀÔ´Ï´Ù.");
+		System.out.println("1ë¶€í„° "+ n +"ê¹Œì§€ì˜ í•©ì€" + sum +"ì…ë‹ˆë‹¤.");
 		
 	}
 }
+

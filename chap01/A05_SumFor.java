@@ -1,21 +1,22 @@
 package DoItAlgorithm.chap01;
 
+
 import java.util.Scanner;
 
-// 1,2,3...nÀÇ ÇÕÀ» ±¸ÇÕ´Ï´Ù. 
+// 1,2,3...nì˜ í•©ì„ êµ¬í•©ë‹ˆë‹¤. 
 public class A05_SumFor {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.println("1ºÎÅÍ n±îÁöÀÇ ÇÕÀ» ±¸ÇÕ´Ï´Ù.");
-		System.out.println("nÀÇ °ª: ");
+		System.out.println("1ë¶€í„° nê¹Œì§€ì˜ í•©ì„ êµ¬í•©ë‹ˆë‹¤.");
+		System.out.println("nì˜ ê°’: ");
 		int n = stdIn.nextInt();
 		
-		int sum = 0; //ÇÕ
+		int sum = 0; //í•©
 		for(int i=1; i<=n; i++)
-			sum+= i; // sum¿¡ i¸¦ ´õÇÑ´Ù
-		System.out.println("1ºÎÅÍ "+n+"±îÁöÀÇ ÇÕÀº" + sum);
+			sum+= i; // sumì— ië¥¼ ë”í•œë‹¤
+		System.out.println("1ë¶€í„° "+n+"ê¹Œì§€ì˜ í•©ì€" + sum);
 	} 
 
 }

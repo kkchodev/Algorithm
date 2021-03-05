@@ -1,28 +1,28 @@
 package DoItAlgorithm.chap01;
 
 public class A02_Min3m {
-//3°³ÀÇ Á¤¼ı°ª °¡¿îµ¥ ÃÖ´ñ°ªÀ» ±¸ÇÏ¿© Ãâ·Â 
-	// a,b,cÀÇ ÃÖ´ñ°ªÀ» ±¸ÇÏ¿© ¹İÈ¯ÇÕ´Ï´Ù. 
-	static int max3(int a, int b, int c) {
-		int max=a; 
-		if(b>max) max =b; 
-		if(c>max) max =c;
+	//3ê°œì˜ ì •ìˆ«ê°’ ê°€ìš´ë° ìµœëŒ“ê°’ì„ êµ¬í•˜ì—¬ ì¶œë ¥ 
+		// a,b,cì˜ ìµœëŒ“ê°’ì„ êµ¬í•˜ì—¬ ë°˜í™˜í•©ë‹ˆë‹¤. 
+		static int max3(int a, int b, int c) {
+			int max=a; 
+			if(b>max) max =b; 
+			if(c>max) max =c;
+			
+			return max; //êµ¬í•œ ìµœëŒ“ê°’ì„ í˜¸ì¶œí•œ ê³³ìœ¼ë¡œ ë°˜í™˜ 
+		}
 		
-		return max; //±¸ÇÑ ÃÖ´ñ°ªÀ» È£ÃâÇÑ °÷À¸·Î ¹İÈ¯ 
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("max(3,2,1) = " + max3(3,2,1)); // [A] a>b>c
-		System.out.println("max(3,2,2) = " + max3(3,2,2)); // [B] a>b=c
-		System.out.println("max(3,2,3) = " + max3(3,2,3));
-		System.out.println("max(2,1,3) = " + max3(2,1,3));
-		System.out.println("max(3,3,2) = " + max3(3,3,2));
-		System.out.println("max(1,2,3) = " + max3(1,2,3));
-		System.out.println("max(2,3,3) = " + max3(2,3,3));
-		System.out.println("max(10,2,5) = " + max3(10,2,5));
-	//ÃÖ´ñ°ªÀ» ¿©·¯ ¹ø ¹İº¹ÇØ¼­ ±¸ÇÏ´Â °æ¿ì, ¸Ş¼­µå·Î Ã³¸®ÇÏ¸é ÆíÇÏ´Ù ! 
-		
-	}
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			System.out.println("max(3,2,1) = " + max3(3,2,1)); // [A] a>b>c
+			System.out.println("max(3,2,2) = " + max3(3,2,2)); // [B] a>b=c
+			System.out.println("max(3,2,3) = " + max3(3,2,3));
+			System.out.println("max(2,1,3) = " + max3(2,1,3));
+			System.out.println("max(3,3,2) = " + max3(3,3,2));
+			System.out.println("max(1,2,3) = " + max3(1,2,3));
+			System.out.println("max(2,3,3) = " + max3(2,3,3));
+			System.out.println("max(10,2,5) = " + max3(10,2,5));
+		//ìµœëŒ“ê°’ì„ ì—¬ëŸ¬ ë²ˆ ë°˜ë³µí•´ì„œ êµ¬í•˜ëŠ” ê²½ìš°, ë©”ì„œë“œë¡œ ì²˜ë¦¬í•˜ë©´ í¸í•˜ë‹¤ ! 
+			
+		}
 
-}
+	}

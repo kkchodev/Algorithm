@@ -2,24 +2,26 @@ package DoItAlgorithm.chap01;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class A01_Max3 {
-//3°³ÀÇ Á¤¼ö°ªÀ» ÀÔ·ÂÇÏ°í ÃÖ´ë°ª ±¸ÇÏ±â 	
+//3ê°œì˜ ì •ìˆ˜ê°’ì„ ì…ë ¥í•˜ê³  ìµœëŒ€ê°’ êµ¬í•˜ê¸° 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.println("¼¼ Á¤¼öÀÇ ÃÖ´ë°ªÀ» ±¸ÇÕ´Ï´Ù.");
-		System.out.println("aÀÇ °ª :"); 
+		System.out.println("ì„¸ ì •ìˆ˜ì˜ ìµœëŒ€ê°’ì„ êµ¬í•©ë‹ˆë‹¤.");
+		System.out.println("aì˜ ê°’ :"); 
 		int a = stdIn.nextInt();
-		System.out.println("bÀÇ °ª :"); 		
+		System.out.println("bì˜ ê°’ :"); 		
 		int b = stdIn.nextInt();
-		System.out.println("cÀÇ °ª :"); 		
+		System.out.println("cì˜ ê°’ :"); 		
 		int c = stdIn.nextInt(); 
-		int max = a; // max¿¡ a°ª ´ëÀÔ
-		if(b>max) max=b; // ¸¸¾à b°¡ max°ªº¸´Ù Å©¸é max¿¡ b ´ëÀÔ
+		int max = a; // maxì— aê°’ ëŒ€ì…
+		if(b>max) max=b; // ë§Œì•½ bê°€ maxê°’ë³´ë‹¤ í¬ë©´ maxì— b ëŒ€ì…
 		if(c>max) max=c;
 		
-		System.out.println("ÃÖ´ñ°ªÀº " + max +"ÀÔ´Ï´Ù.");
+		System.out.println("ìµœëŒ“ê°’ì€ " + max +"ì…ë‹ˆë‹¤.");
 		
 	}
 

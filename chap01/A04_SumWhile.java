@@ -1,5 +1,6 @@
 package DoItAlgorithm.chap01;
 
+
 import java.util.Scanner;
 
 public class A04_SumWhile {
@@ -7,17 +8,17 @@ public class A04_SumWhile {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner stdIn = new Scanner(System.in);
-		System.out.println("1ºÎÅÍ n±îÁö ÇÕÀ» ±¸ÇÕ´Ï´Ù.");
-		System.out.println("nÀÇ °ª: ");
+		System.out.println("1ë¶€í„° nê¹Œì§€ í•©ì„ êµ¬í•©ë‹ˆë‹¤.");
+		System.out.println("nì˜ ê°’: ");
 		int n = stdIn.nextInt(); 
 		
-		int sum = 0; //ÇÕ
+		int sum = 0; //í•©
 		int i = 1 ; 
 		
-		while(i<=n) { // i °¡ n ÀÌÇÏ¸é ¹İº¹ÇÕ´Ï´Ù.
-			sum += i; // sum¿¡ i¸¦ ´õÇÕ´Ï´Ù. 
-			i++; // i °ªÀ» ¸¸Å­ Áõ°¡½ÃÅµ´Ï´Ù.	
+		while(i<=n) { // i ê°€ n ì´í•˜ë©´ ë°˜ë³µí•©ë‹ˆë‹¤.
+			sum += i; // sumì— ië¥¼ ë”í•©ë‹ˆë‹¤. 
+			i++; // i ê°’ì„ ë§Œí¼ ì¦ê°€ì‹œí‚µë‹ˆë‹¤.	
 		}
-		System.out.println("1ºÎÅÍ "+n+"±îÁöÀÇ ÇÕÀº "+ sum );
+		System.out.println("1ë¶€í„° "+n+"ê¹Œì§€ì˜ í•©ì€ "+ sum );
 	}
 }
