@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_02;
+package DoItAlgorithm.chap02_02;
 
 // 그 해 경과 일 수를 구함 
 

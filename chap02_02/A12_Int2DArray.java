@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_02;
+package DoItAlgorithm.chap02_02;
 
 
 //2행 4차원 배열

@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_02;
+package DoItAlgorithm.chap02_02;
 // 1000 이하의 소수를 열거 (ver3)
 public class A11_PrimeNumber3 {
 
