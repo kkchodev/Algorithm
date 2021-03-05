@@ -2,44 +2,44 @@ package DoItAlgorithm.chap02_01;
 
 import java.util.Scanner;
 
-//  µÎ ¹è¿­ÀÌ °°Àº°¡¸¦ ÆÇ´Ü
+//ë‘ ë°°ì—´ì´ ê°™ì€ê°€ë¥¼ íŒë‹¨
 public class A07_ArrayEqual {
-	// µÎ ¹è¿­ a, bÀÇ ¸ğµç ¿ä¼Ò°¡ °°Àº°¡?
-	static boolean equals(int[] a, int[] b) {
-		if (a.length != b.length)
+// ë‘ ë°°ì—´ a, bì˜ ëª¨ë“  ìš”ì†Œê°€ ê°™ì€ê°€?
+static boolean equals(int[] a, int[] b) {
+	if (a.length != b.length)
+		return false;
+
+	for (int i = 0; i < a.length; i++) {
+		if (a[i] != b[i])
 			return false;
+	}
+	return true;
+}
 
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] != b[i])
-				return false;
-		}
-		return true;
+public static void main(String[] args) {
+	Scanner stdIn = new Scanner(System.in);
+
+	System.out.print("ë°°ì—´ aì˜ ìš”ì†Ÿìˆ˜: ");
+	int na = stdIn.nextInt(); // ë°°ì—´ aì˜ ìš”ì†Ÿìˆ˜
+
+	int[] a = new int[na]; // ìš”ì†Ÿìˆ˜ê°€ naì¸ ë°°ì—´
+
+	for (int i = 0; i < na; i++) {
+		System.out.print("a[" + i + "]: ");
+		a[i] = stdIn.nextInt();
 	}
 
-	public static void main(String[] args) {
-		Scanner stdIn = new Scanner(System.in);
+	System.out.print("ë°°ì—´ bì˜ ìš”ì†Ÿìˆ˜: ");
+	int nb = stdIn.nextInt(); // ë°°ì—´ aì˜ ìš”ì†Ÿìˆ˜
 
-		System.out.print("¹è¿­ aÀÇ ¿ä¼Ú¼ö: ");
-		int na = stdIn.nextInt(); // ¹è¿­ aÀÇ ¿ä¼Ú¼ö
+	int[] b = new int[nb]; // ìš”ì†Ÿìˆ˜ê°€ nbì¸ ë°°ì—´
 
-		int[] a = new int[na]; // ¿ä¼Ú¼ö°¡ naÀÎ ¹è¿­
-
-		for (int i = 0; i < na; i++) {
-			System.out.print("a[" + i + "]: ");
-			a[i] = stdIn.nextInt();
-		}
-
-		System.out.print("¹è¿­ bÀÇ ¿ä¼Ú¼ö: ");
-		int nb = stdIn.nextInt(); // ¹è¿­ aÀÇ ¿ä¼Ú¼ö
-
-		int[] b = new int[nb]; // ¿ä¼Ú¼ö°¡ nbÀÎ ¹è¿­
-
-		for (int i = 0; i < nb; i++) {
-			System.out.print("b[" + i + "]: ");
-			b[i] = stdIn.nextInt();
-		}
-
-		System.out.println("¹è¿­ a¿Í b´Â " + 
-						(equals(a, b) ? "°°½À´Ï´Ù" : "°°Áö ¾Ê½À´Ï´Ù."));
+	for (int i = 0; i < nb; i++) {
+		System.out.print("b[" + i + "]: ");
+		b[i] = stdIn.nextInt();
 	}
+
+	System.out.println("ë°°ì—´ aì™€ bëŠ” " + 
+					(equals(a, b) ? "ê°™ìŠµë‹ˆë‹¤" : "ê°™ì§€ ì•ŠìŠµë‹ˆë‹¤."));
+}
 }

@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 class A05_MaxOfArrayRand {
-// ¹è¿­ ¿ä¼ÒÀÇ ÃÖ´ñ°ªÀ» ³ªÅ¸³À´Ï´Ù. °ªÀ» ³­¼ö·Î »ı¼º
+// ë°°ì—´ ìš”ì†Œì˜ ìµœëŒ“ê°’ì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. ê°’ì„ ë‚œìˆ˜ë¡œ ìƒì„±
 	
 	static int maxOf(int[] a) {
 		int max = a[0];
@@ -20,17 +20,17 @@ class A05_MaxOfArrayRand {
 		Random rand = new Random();
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Å°ÀÇ ÃÖ´ë°ªÀ» ±¸ÇÕ´Ï´Ù. \n »ç¶÷ÀÇ ¼ö: ");
-		int num= scan.nextInt();// ¹è¿­ÀÇ ¿ä¼Ú¼ö¸¦ ÀÔ·Â ¹ŞÀ½
+		System.out.println("í‚¤ì˜ ìµœëŒ€ê°’ì„ êµ¬í•©ë‹ˆë‹¤. \n ì‚¬ëŒì˜ ìˆ˜: ");
+		int num= scan.nextInt();// ë°°ì—´ì˜ ìš”ì†Ÿìˆ˜ë¥¼ ì…ë ¥ ë°›ìŒ
 		
 		int[] heigth = new int [num];
 		
-		System.out.println("Å° °ªÀº ¾Æ·¡¿Í °°½À´Ï´Ù. ");
+		System.out.println("í‚¤ ê°’ì€ ì•„ë˜ì™€ ê°™ìŠµë‹ˆë‹¤. ");
 		for (int i=0; i<num; i++) {
-			heigth[i] = 100 + rand.nextInt(90); // ¿ä¼Ú°ªÀ» ³­¼ö·Î °áÁ¤
+			heigth[i] = 100 + rand.nextInt(90); // ìš”ì†Ÿê°’ì„ ë‚œìˆ˜ë¡œ ê²°ì •
 			System.out.println("heigth["+i + "]: " +heigth[i]);
 		}
-		System.out.println("ÃÖ´ñ°ªÀº " + maxOf(heigth)+"ÀÔ´Ï´Ù.");
+		System.out.println("ìµœëŒ“ê°’ì€ " + maxOf(heigth)+"ì…ë‹ˆë‹¤.");
 	}
 
 }

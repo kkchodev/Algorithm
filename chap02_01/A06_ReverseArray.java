@@ -1,13 +1,14 @@
 package DoItAlgorithm.chap02_01;
 
+
 import java.util.Scanner;
 
 class A06_ReverseArray {
-	 // ¹è¿­ ¿ä¼Ò a[idx]¿Í a[idx2] °ªÀ» ¹Ù²Û´Ù. 
+	 // ë°°ì—´ ìš”ì†Œ a[idx]ì™€ a[idx2] ê°’ì„ ë°”ê¾¼ë‹¤. 
 	static void swap(int[] a, int idx1, int idx2) {
 		int t =a[idx1]; a[idx1]=a[idx2]; a[idx2]=t; 
 	}
-	// ¹è¿­ aÀÇ ¿ä¼Ò¸¦ ¿ª¼øÀ¸·Î Á¤·Ä 
+	// ë°°ì—´ aì˜ ìš”ì†Œë¥¼ ì—­ìˆœìœ¼ë¡œ ì •ë ¬ 
 	static void reverse(int[] a) {
 		for(int i=0; i <a.length/2; i++)
 			swap(a, i, a.length-i-1); 
@@ -16,21 +17,20 @@ class A06_ReverseArray {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("¿ä¼Ú¼ö: ");
-		int num = scan.nextInt(); // ÀÌ°Ô ¿ä¼Ú¼ö
+		System.out.println("ìš”ì†Ÿìˆ˜: ");
+		int num = scan.nextInt(); // ì´ê²Œ ìš”ì†Ÿìˆ˜
 		
-		int[] x = new int[num]; // ¿ä¼Ú¼ö°¡ numÀÎ ¹è¿­ 
+		int[] x = new int[num]; // ìš”ì†Ÿìˆ˜ê°€ numì¸ ë°°ì—´ 
 		
 		for(int i=0; i<num; i++) {
 			System.out.println("x["+i+"] : ");
 			x[i] = scan.nextInt();
 		}
-		reverse(x); // ¹è¿­ aÀÇ ¿ä¼Ò¸¦ ¿ª¼øÀ¸·Î Á¤·Ä 
+		reverse(x); // ë°°ì—´ aì˜ ìš”ì†Œë¥¼ ì—­ìˆœìœ¼ë¡œ ì •ë ¬ 
 		
-		System.out.println("¿ä¼Ò¸¦ ¿ª¼øÀ¸·Î Á¤·ÄÇß½À´Ï´Ù.");
+		System.out.println("ìš”ì†Œë¥¼ ì—­ìˆœìœ¼ë¡œ ì •ë ¬í–ˆìŠµë‹ˆë‹¤.");
 		for(int i=0; i<num; i++)
 			System.out.println("x[" +i +"]= " + x[i]);
 	}
 }
-
 

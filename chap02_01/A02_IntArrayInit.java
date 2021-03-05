@@ -1,10 +1,11 @@
 package DoItAlgorithm.chap02_01;
 
+
 public class A02_IntArrayInit {
 
 	public static void main(String[] args) {
-		int[] a = {1,2,3,4,5}; // ¹è¿­ ÃÊ±âÀÚ¿¡ ÀÇÇØ »ı¼º 
-		// new ¿¬»êÀÚ¸¦ »ç¿ëÇÏ¿© Á» ´õ ¸íÈ®ÇÏ°Ô ¼±¾ğÇÒ ¼ö ÀÖ´Ù. 
+		int[] a = {1,2,3,4,5}; // ë°°ì—´ ì´ˆê¸°ìì— ì˜í•´ ìƒì„± 
+		// new ì—°ì‚°ìë¥¼ ì‚¬ìš©í•˜ì—¬ ì¢€ ë” ëª…í™•í•˜ê²Œ ì„ ì–¸í•  ìˆ˜ ìˆë‹¤. 
 		for(int i=0; i<a.length; i++)
 			System.out.println("a["+ i +"] =" +a[i]);
 	}

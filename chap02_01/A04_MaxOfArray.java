@@ -1,12 +1,12 @@
 package DoItAlgorithm.chap02_01;
-//¹è¿­ ¿ä¼ÒÀÇ ÃÖ´ñ°ªÀ» ³ªÅ¸³À´Ï´Ù.(°ªÀ» ÀÔ·Â ¹ŞÀ½)
+//ë°°ì—´ ìš”ì†Œì˜ ìµœëŒ“ê°’ì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤.(ê°’ì„ ì…ë ¥ ë°›ìŒ)
 
 import java.util.Scanner;
 
 class A04_MaxOfArray {
-	// ¹è¿­ aÀÇ ÃÖ´ë°ªÀ» ±¸ÇÏ¿© ¹İÈ¯ÇÕ´Ï´Ù. 
+	// ë°°ì—´ aì˜ ìµœëŒ€ê°’ì„ êµ¬í•˜ì—¬ ë°˜í™˜í•©ë‹ˆë‹¤. 
 	 
-	static int maxOf(int[] a) { //¹è¿­ÀÇ ÃÖ´ñ°ªÀ» ±¸ÇÏ´Â ¸Ş¼­µå 
+	static int maxOf(int[] a) { //ë°°ì—´ì˜ ìµœëŒ“ê°’ì„ êµ¬í•˜ëŠ” ë©”ì„œë“œ 
 		int max = a[0]; 
 		for(int i=1; i <a.length; i++)
 			if( a[i] > max)
@@ -19,16 +19,16 @@ class A04_MaxOfArray {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Å°ÀÇ ÃÖ´ñ°ªÀ» ±¸ÇÕ´Ï´Ù. ");
-		System.out.println("»ç¶÷ ¼ö : ");
-		int num = scan.nextInt(); // ¹è¿­ÀÇ ¿ä¼Ú¼ö¸¦ ÀÔ·Â¹ŞÀ½
+		System.out.println("í‚¤ì˜ ìµœëŒ“ê°’ì„ êµ¬í•©ë‹ˆë‹¤. ");
+		System.out.println("ì‚¬ëŒ ìˆ˜ : ");
+		int num = scan.nextInt(); // ë°°ì—´ì˜ ìš”ì†Ÿìˆ˜ë¥¼ ì…ë ¥ë°›ìŒ
 		
-		int[] height = new int[num]; //¿ä¼Ú¼ö°¡ num ÀÎ ¹è¿­À» »ı¼º
+		int[] height = new int[num]; //ìš”ì†Ÿìˆ˜ê°€ num ì¸ ë°°ì—´ì„ ìƒì„±
 		
 		for(int i = 0; i<num; i++) {
 			System.out.println("height["+i+"]:");
 			height[i]=scan.nextInt();
 		}
-		System.out.println("ÃÖ´ñ°ªÀº "+ maxOf(height) + "ÀÔ´Ï´Ù."); // ¹è¿­ ÃÖ´ñ°ªÀ» ±¸ÇÏ±â À§ÇÑ ¸Ş¼­µå È£Ãâ 
+		System.out.println("ìµœëŒ“ê°’ì€ "+ maxOf(height) + "ì…ë‹ˆë‹¤."); // ë°°ì—´ ìµœëŒ“ê°’ì„ êµ¬í•˜ê¸° ìœ„í•œ ë©”ì„œë“œ í˜¸ì¶œ 
 	}
 }
