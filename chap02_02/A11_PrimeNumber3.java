@@ -1,23 +1,23 @@
 package DoItAlgorithm.chap02_02;
-// 1000 ÀÌÇÏÀÇ ¼Ò¼ö¸¦ ¿­°Å (ver3)
+//1000 ì´í•˜ì˜ ì†Œìˆ˜ë¥¼ ì—´ê±° (ver3)
 public class A11_PrimeNumber3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int counter=0; // °ö¼À°ú ³ª´°¼ÀÀÇ È¸¼ö
-		int ptr=0; // Ã£Àº ¼Ò¼öÀÇ °¹¼ö 
-		int[] prime = new int[500]; // ¼Ò¼ö¸¦ ÀúÀåÇÏ´Â ¹è¿­ 
+		int counter=0; // ê³±ì…ˆê³¼ ë‚˜ëˆ—ì…ˆì˜ íšŒìˆ˜
+		int ptr=0; // ì°¾ì€ ì†Œìˆ˜ì˜ ê°¯ìˆ˜ 
+		int[] prime = new int[500]; // ì†Œìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” ë°°ì—´ 
 		
-		prime[ptr++] = 2; // 2´Â ¼Ò¼öÀÓ
-		prime[ptr++] = 3; // 3Àº ¼Ò¼öÀÓ
+		prime[ptr++] = 2; // 2ëŠ” ì†Œìˆ˜ì„
+		prime[ptr++] = 3; // 3ì€ ì†Œìˆ˜ì„
 		
-		for(int n =5; n<=1000; n+=2) { // ´ë»óÀº È¦¼ö¸¸
+		for(int n =5; n<=1000; n+=2) { // ëŒ€ìƒì€ í™€ìˆ˜ë§Œ
 			boolean flag = false; 
 			for(int i = 1; prime[i]*prime[i]<=n; i++) {
 				counter +=2; 
-				if(n % prime[i]==0) { //³ª´©¾î ¶³¾îÁö¸é ¼Ò¼ö°¡ ¾Æ´Ô 
+				if(n % prime[i]==0) { //ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ë©´ ì†Œìˆ˜ê°€ ì•„ë‹˜ 
 					flag=true;
-					break; // ´õÀÌ»ó ¹İº¹Àº ºÒÇÊ¿ä
+					break; // ë”ì´ìƒ ë°˜ë³µì€ ë¶ˆí•„ìš”
 				}
 			}
 				if(!flag) {
@@ -25,10 +25,10 @@ public class A11_PrimeNumber3 {
 					counter ++;
 				}
 			}
-		for(int i=0; i<ptr; i++) // Ã£Àº ptr °³ÀÇ ¼Ò¼ö¸¦ Ãâ·Â
+		for(int i=0; i<ptr; i++) // ì°¾ì€ ptr ê°œì˜ ì†Œìˆ˜ë¥¼ ì¶œë ¥
 			System.out.println(prime[i]);
 		
-		System.out.println("°ö¼À°ú ³ª´°¼ÀÀ» ¼öÇàÇÑ È½¼ö: "+ counter);
+		System.out.println("ê³±ì…ˆê³¼ ë‚˜ëˆ—ì…ˆì„ ìˆ˜í–‰í•œ íšŸìˆ˜: "+ counter);
 		}
 	}
 

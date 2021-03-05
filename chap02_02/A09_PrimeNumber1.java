@@ -1,5 +1,5 @@
 package DoItAlgorithm.chap02_02;
-//1000 ÀÌÇÏÀÇ ¼Ò¼ö¸¦ ¿­°Å (ver1) 
+//1000 ì´í•˜ì˜ ì†Œìˆ˜ë¥¼ ì—´ê±° (ver1) 
 public class A09_PrimeNumber1 {
 
 	public static void main(String[] args) {
@@ -10,13 +10,13 @@ public class A09_PrimeNumber1 {
 			int i;
 			for(i=2; i<n; i++) {
 				counter++;
-				if( n % i==0) // ³ª´©¾î ¶³¾îÁö¸é ¼Ò¼ö°¡ ¾Æ´Ô
-					break; // ±×·¯´Ï±î ´õ ÀÌ»óÀÇ ¹İº¹Àº ºÒÇÊ¿ä
+				if( n % i==0) // ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ë©´ ì†Œìˆ˜ê°€ ì•„ë‹˜
+					break; // ê·¸ëŸ¬ë‹ˆê¹Œ ë” ì´ìƒì˜ ë°˜ë³µì€ ë¶ˆí•„ìš”
 			}
-			if(n==i) // ¸¶Áö¸·±îÁö ³ª´©¾î ¶³¾îÁöÁö ¾ÊÀ½ 
+			if(n==i) // ë§ˆì§€ë§‰ê¹Œì§€ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ì§€ ì•ŠìŒ 
 				System.out.println(n);
 		}
-		System.out.println("³ª´°¼ÀÀ» ¼öÇàÇÑ È½¼ö "  + counter );
+		System.out.println("ë‚˜ëˆ—ì…ˆì„ ìˆ˜í–‰í•œ íšŸìˆ˜ "  + counter );
 	}
 
 }

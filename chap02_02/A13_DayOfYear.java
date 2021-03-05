@@ -1,25 +1,25 @@
 package DoItAlgorithm.chap02_02;
 
-// ±× ÇØ °æ°ú ÀÏ ¼ö¸¦ ±¸ÇÔ 
+//ê·¸ í•´ ê²½ê³¼ ì¼ ìˆ˜ë¥¼ êµ¬í•¨ 
 
 import java.util.Scanner;
 
 class A13_DayOfYear {
-    // °¢ ´ŞÀÇ ÀÏ¼ö 
+ // ê° ë‹¬ì˜ ì¼ìˆ˜ 
 	 static int[][] mdays= {
-			 {31,28,31,30,31,30,31,31,30,31,30,31}, // Æò³â
-			 {31,29,31,30,31,30,31,31,30,31,30,31}, // À±³â
+			 {31,28,31,30,31,30,31,31,30,31,30,31}, // í‰ë…„
+			 {31,29,31,30,31,30,31,31,30,31,30,31}, // ìœ¤ë…„
 	 };
 	 
-	 //  ¼­±â year ³âÀº À±³âÀÎ°¡? (À±³â:1, Æò³â:0) 
+	 //  ì„œê¸° year ë…„ì€ ìœ¤ë…„ì¸ê°€? (ìœ¤ë…„:1, í‰ë…„:0) 
 	 static int isLeap(int year) {
 		 return(year %4==0 && year%100!=0 || year % 400==0)?1:0;
 	 }
-	 // ¼­±â y³âÀÇ m¿ù dÀÏÀÇ ±× ÇØ °æ°ú ÀÏ ¼ö¸¦ ±¸ÇÔ 
+	 // ì„œê¸° yë…„ì˜ mì›” dì¼ì˜ ê·¸ í•´ ê²½ê³¼ ì¼ ìˆ˜ë¥¼ êµ¬í•¨ 
 	 static int dayOfYear(int y, int m, int d) {
-		 int days = d; // ÀÏ¼ö
+		 int days = d; // ì¼ìˆ˜
 		
-		 for(int i=1; i<m; i++) // 1¿ù~ (m-1)¿ùÀÇ ÀÏ ¼ö¸¦ ´õÇÔ 
+		 for(int i=1; i<m; i++) // 1ì›”~ (m-1)ì›”ì˜ ì¼ ìˆ˜ë¥¼ ë”í•¨ 
 			 days += mdays[isLeap(y)][i-1]; 
 		 return days; 
 	 }
@@ -29,20 +29,21 @@ class A13_DayOfYear {
 		Scanner stdIn = new Scanner (System.in);
 		int retry; 
 		
-		System.out.println("±× ÇØ °æ°ú ÀÏ¼ö¸¦ ±¸ÇÕ´Ï´Ù.");
+		System.out.println("ê·¸ í•´ ê²½ê³¼ ì¼ìˆ˜ë¥¼ êµ¬í•©ë‹ˆë‹¤.");
 		
 		do {
-			System.out.println("³â: "); int year = stdIn.nextInt(); //³â
-			System.out.println("¿ù: "); int month = stdIn.nextInt(); //¿ù
-			System.out.println("ÀÏ: "); int day = stdIn.nextInt(); //ÀÏ
+			System.out.println("ë…„: "); int year = stdIn.nextInt(); //ë…„
+			System.out.println("ì›”: "); int month = stdIn.nextInt(); //ì›”
+			System.out.println("ì¼: "); int day = stdIn.nextInt(); //ì¼
 			
-			System.out.printf("±× ÇØ %d ÀÏ Â° ÀÔ´Ï´Ù. \n", dayOfYear(year,month,day));
-			System.out.print("ÇÑ ¹ø ´õ ÇÒ±î¿ä? 1.¿¹ 2.¾Æ´Ï¿À");
+			System.out.printf("ê·¸ í•´ %d ì¼ ì§¸ ì…ë‹ˆë‹¤. \n", dayOfYear(year,month,day));
+			System.out.print("í•œ ë²ˆ ë” í• ê¹Œìš”? 1.ì˜ˆ 2.ì•„ë‹ˆì˜¤");
 			retry=stdIn.nextInt();
 		}
 		while (retry==1);
 					
 		}
 	}
+
 
 

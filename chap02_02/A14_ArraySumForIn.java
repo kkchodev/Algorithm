@@ -1,6 +1,6 @@
 package DoItAlgorithm.chap02_02;
 
-// ╧Х©╜юг ╦П╣Г ©Д╪рюг гую╩ ╠╦го©╘ цБ╥бгт(х╝юЕfor╧╝)
+//К╟╟Л≈╢Л²≤ К╙╗К⌠═ Л ■Л├▄Л²≤ М∙╘Л²└ Й╣╛М∙≤Л≈╛ Л╤°К═╔М∙╗(М≥∙Л·╔forК╛╦)
 
 class A14_ArraySumForIn {
 
@@ -11,11 +11,11 @@ class A14_ArraySumForIn {
 		for (int i=0; i<a.length; i++)
 			System.out.println("a["+ i + "]=" + a[i]);
 		
-		double sum=0; // гу╟Х 
+		double sum=0; // М∙╘ЙЁ└ 
 		
 		for (double i:a)
 			sum += i; 
-		System.out.println("╦П╣Г ©Д╪рюг гую╨ "+ sum +"ют╢о╢ы.");
+		System.out.println("К╙╗К⌠═ Л ■Л├▄Л²≤ М∙╘Л²─ "+ sum +"Л·┘К▀┬К▀╓.");
 	}
 
 }

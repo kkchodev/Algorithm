@@ -1,27 +1,27 @@
 package DoItAlgorithm.chap02_02;
-// 1000 ÀÌÇÏÀÇ ¼Ò¼ö ¿­°Å (ver2)
+//1000 ì´í•˜ì˜ ì†Œìˆ˜ ì—´ê±° (ver2)
 
 public class A10_PrimeNumber2 {
 	public static void main(String[] args) {
-		int counter=0;  // ³ª´°¼ÀÀÇ È½¼ö
-		int ptr = 0;  // Ã£Àº ¼Ò¼öÀÇ °³¼ö 
-		int[] prime = new int[500];  // ¼Ò¼ö¸¦ ÀúÀåÇÏ´Â ¹è¿­
+		int counter=0;  // ë‚˜ëˆ—ì…ˆì˜ íšŸìˆ˜
+		int ptr = 0;  // ì°¾ì€ ì†Œìˆ˜ì˜ ê°œìˆ˜ 
+		int[] prime = new int[500];  // ì†Œìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” ë°°ì—´
 		
-		prime[ptr++] =2; // 2´Â ¼Ò¼öÀÓ
+		prime[ptr++] =2; // 2ëŠ” ì†Œìˆ˜ì„
 		
-		for(int n =3; n<=1000; n+=2) {//´ë»óÀº È¦¼ö¸¸
+		for(int n =3; n<=1000; n+=2) {//ëŒ€ìƒì€ í™€ìˆ˜ë§Œ
 			int i; 
 			for(i=1; i<ptr; i++) {
 				counter++;
-				if(n%prime[i] ==0) // ³ª´©¾î ¶³¾îÁö¸é ¼Ò¼ö°¡ ¾Æ´Ô. 
-					break;  // ´õÀÌ»óÀÇ ¹İº¹Àº ºÒÇÊ¿ä
+				if(n%prime[i] ==0) // ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ë©´ ì†Œìˆ˜ê°€ ì•„ë‹˜. 
+					break;  // ë”ì´ìƒì˜ ë°˜ë³µì€ ë¶ˆí•„ìš”
 			} 
-			if(ptr==i)  // ¸¶Áö¸·±îÁö ³ª´©¾î ¶³¾îÁöÁö ¾ÊÀ½
-			 prime[ptr++]=n;  // ¼Ò¼ö¶ó°í ¹è¿­¿¡ ÀúÀå
+			if(ptr==i)  // ë§ˆì§€ë§‰ê¹Œì§€ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ì§€ ì•ŠìŒ
+			 prime[ptr++]=n;  // ì†Œìˆ˜ë¼ê³  ë°°ì—´ì— ì €ì¥
 		}
-		for(int i=0; i<ptr; i++) // Ã£Àº ptr°³ÀÇ ¼Ò¼ö¸¦ ³ªÅ¸³¿
+		for(int i=0; i<ptr; i++) // ì°¾ì€ ptrê°œì˜ ì†Œìˆ˜ë¥¼ ë‚˜íƒ€ëƒ„
 			System.out.println(prime[i]);
-		System.out.println("³ª´°¼ÀÀ» ¼öÇàÇÑ È½¼ö: " + counter);
+		System.out.println("ë‚˜ëˆ—ì…ˆì„ ìˆ˜í–‰í•œ íšŸìˆ˜: " + counter);
 		
 	}
 }
