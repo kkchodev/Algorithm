@@ -1,4 +1,4 @@
-package doitAlgorithm.chap01;
+package DoItAlgorithm.chap01;
 
 //곱셈표를 출력합니다. 
 

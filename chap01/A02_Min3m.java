@@ -1,4 +1,4 @@
-package doitAlgorithm.chap01;
+package DoItAlgorithm.chap01;
 
 public class A02_Min3m {
 //3개의 정숫값 가운데 최댓값을 구하여 출력 
