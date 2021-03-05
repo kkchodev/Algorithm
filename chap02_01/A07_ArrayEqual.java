@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_01;
+package DoItAlgorithm.chap02_01;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_01;
+package DoItAlgorithm.chap02_01;
 //배열을 복제합니다.
 public class A03_CloneArray {
 

@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_01;
+package DoItAlgorithm.chap02_01;
 
 public class A01_IntArray {
 

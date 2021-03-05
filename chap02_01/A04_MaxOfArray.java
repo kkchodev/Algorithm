@@ -1,4 +1,4 @@
-package doitAlgorithm.chap02_01;
+package DoItAlgorithm.chap02_01;
 //배열 요소의 최댓값을 나타냅니다.(값을 입력 받음)
 
 import java.util.Scanner;
